@@ -6,10 +6,9 @@
 // } = process.env
 
 const REDIS_OPTIONS = {
-    port: 12011,// process.env.REDIS_PORT || 6379,
-    host: 'redis-12011.c56.east-us.azure.cloud.redislabs.com', //process.env.REDIS_HOST || 'localhost',
-    password: 'fcQfjTZUhCzwFg1WATNcmDoUXgAOasWe'//process.env.REDIS_PASSWORD || 'secret'
+    port: process.env.REDIS_PORT || 6379,
+    host: process.env.REDIS_HOST || 'localhost',
+    password: process.env.REDIS_PASSWORD || 'secret'
 }
-
 
 module.exports = REDIS_OPTIONS;

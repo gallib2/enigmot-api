@@ -13,6 +13,7 @@ const {
 const SESSION_OPTIONS = {
     secret: SESSION_SECRET,
     name: SESSION_NAME,
+    proxy : true,
     cookie: {
         maxAge: SESSION_IDLE_TIMEOUT,
         secure: IN_PROD,
